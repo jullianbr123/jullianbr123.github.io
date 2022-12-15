@@ -1,0 +1,1060 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top: 0;left: 0; right: 0;
+    background: rgb(43, 43, 43);
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    padding: 5px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-size: 28px;
+    font-weight: bolder;
+    color: rgb(255, 128, 24);
+    transition: 1s;
+}
+header .logo:hover{
+color: white;
+}
+ .nav-bar img{
+    padding: 0 10px;
+    width: 50px;
+}
+header .nav-bar ul{
+    list-style: none;
+}
+header .nav-bar ul li{
+    position: relative;
+    float: left;
+    right: 300px;
+}
+header .nav-bar ul li a{
+    font-size: 17px;
+    padding: 20px 25px 20px 25px;
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: .6s;
+}
+header .nav-bar ul li a:hover{
+background: rgba(29, 29, 29, 0.788);
+}
+    header .nav-bar2 ul{
+        list-style: none;
+    }
+    header .nav-bar2 ul li{
+        position: relative;
+        float: left;
+        right: 250px
+    }
+    header .nav-bar2 ul li a{
+        font-size: 17px;
+        padding: 20px 25px 20px 25px;
+        color: rgb(255, 255, 255);
+        display: block;
+        transition: .6s;
+    }
+    header .nav-bar2 ul li a:hover{
+     background: rgba(94, 94, 94, 0.788);
+    }
+    header .nav-bar table{
+        position: absolute;
+        left: -420px;
+        height: 290px;
+        width: 3000px;
+        background: rgb(0, 0, 0);
+        padding: 10px 350px;
+        margin: 5px 0;
+        line-height: 0;
+        display:none;
+    }
+    header .nav-bar span{
+        color: rgb(129, 129, 129);
+        font-weight: bolder;
+    }
+    header .nav-bar tr td:hover{
+        background-color: rgb(136, 136, 136);
+    }
+    header .nav-bar ul li ul li{
+        width: 100%;
+        left:0;
+        border-top: 1px solid rgba(0, 0, 0,.1);
+    }
+    header .nav-bar ul li:active > table, header .nav-bar ul li:focus-within > table{
+        display: initial;
+    }
+header .nav-bar .news{
+        position: absolute;
+        left: 0;
+        height: 180px;
+        line-height: 2px;
+        padding: 0 50px;
+        margin: 5px 0;
+        width: 300px;
+        background: rgb(0, 0, 0);
+        display: none;
+    }
+    header .nav-bar2 h1,header .nav-bar2 i{
+        font-size: 20px;
+        color: white;
+    }
+header .user{
+    position: absolute;
+        left: -200px;
+        height: 430px;
+        width: 270px;
+        background: rgb(0, 0, 0);
+        display: none;
+}
+header .nav-bar2 ul li:active >  .user , header .nav-bar2 ul li:focus-within >  .user{
+    display: initial;
+}
+.user-premium{
+    color: yellow;
+    padding-left: 50px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+.usar{
+font-size: 25px;
+padding-top: 30px;
+color: white;
+padding-left: 50px;
+padding-bottom: 10px;
+}
+.content{
+width: 100%;
+height: 700px;
+background-image: url('../images/background-2.webp');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.slides{
+   width: 900px;
+   height: 500px;
+   position: absolute;
+   top:130px; right: 500px;
+   overflow: hidden;
+}
+.slides img{
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+}
+.slides ul{
+    list-style: none;
+    display: inline-flex;
+} 
+.navigation{
+    position: absolute;
+    bottom: 90px;
+    left: 300px;
+    display: flex;
+}
+.barra{
+    width: 160px;
+    height: 50px;
+    border-top: 2px solid rgb(255, 115, 0);
+    margin:50px;
+    text-align: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    font-family: 'Zen Dots', cursive;
+    transition: .6s;
+    border-radius: 2px;
+}
+.barra:hover{
+    background-color: rgb(126, 126, 126);
+}
+.barra:active{
+    transform: translateY(4px);
+}
+input{
+    display: none;
+}
+.slide{
+    width: 24%;
+    transition: .6s;
+}
+#radio1:checked ~ .s1{
+margin: 0;
+}
+#radio2:checked ~ .s1{
+    margin: -28.1%;
+}
+#radio3:checked ~ .s1{
+    margin: -56.2%;
+}
+#radio4:checked ~ .s1{
+    margin: -84.2%;
+}
+#radio5:checked ~ .s1{
+    margin: -112%;
+}
+.listas-anime{
+    width: 100%;
+    background-color: black;
+    height: 1000px;
+}
+.listas-anime h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto' , sans-serif;
+    padding-left: 250px;
+}
+.listas-anime hr,.recem-animes hr,.animes-donghua hr,.animes-curious hr{
+    width: 1360px;
+    margin-left: 230px;
+    border: 2px solid rgb(61, 179, 173);
+    margin-bottom: 12px;
+}
+.listas-anime table{
+    padding-left: 220px;
+    margin: 15px 0;
+}
+.listas-anime a{
+    color: rgb(255, 255, 255);
+}
+.listas-anime th{
+    width: 15px;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.listas-anime tr td{
+    font-size: 15px;
+}
+.listas-anime td{
+    color: rgb(109, 109, 109);
+    text-align: center;
+}
+.listas-anime span{
+    color: rgb(0, 182, 189);
+}
+.listas-anime img{
+    width: 150px;
+    margin: 10px;
+    height: 200px; 
+}
+.listas-anime img:hover{
+    border: 1px solid rgb(0, 182, 189);
+    transform: translateY(4px);
+}
+.ver-historico a{
+    font-size: 17px;
+    color: rgb(97, 97, 97);
+    margin-left: 880px;
+}
+.ver-historico a:hover{
+    color: white;
+    transition: .5s;
+}
+.animes-historic{
+    width: 100%;
+    height: 780px;
+    background: rgb(0, 0, 0);
+}
+.animes-historic table{
+    padding-left: 280px;
+    padding-top: 30px;
+}
+.animes-historic figure{
+    margin:0 30px;
+    height: 150px;
+    width:260px;
+}
+.animes-historic span{
+    color: rgb(116, 110, 110);
+    font-size: 11px;
+    margin: 0 30px;
+}
+
+.animes-historic span:hover{
+    color: white;
+    text-decoration: underline;
+}
+.animes-historic th a{
+    color: rgb(255, 255, 255);
+    margin-right: 80px;
+}
+.animes-historic th{
+width: 25px;
+font-size: 20px;
+margin:0 10px;
+}
+.animes-historic i{
+    font-size: 13px;    
+    color: rgb(116, 110, 110);
+    margin-left: 125px;
+}
+.animes-historic a{
+    color: rgb(116, 110, 110);
+}
+.animes-historic figure,.animes-historic figure img{
+    width: 260px;
+    height: 150px;
+}
+.ad{
+    padding-left: 400px;
+    padding-top: 60px;
+}
+.listas-anime2{
+    width: 100%;
+    height: 500px;
+    background:rgb(0, 0, 0);
+}
+.listas-anime2 h1{
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto' , sans-serif;
+    padding-left: 250px;
+}
+.listas-anime2 h2,.animes-donghua h2,.animes-curious h2{
+  color: rgb(209, 209, 209);
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 250px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.listas-anime2 hr, .animes-popular hr,.lancamentos hr,.waifu-animes hr{
+    width: 1360px;
+    margin-left: 230px;
+    border: 2px solid rgb(252, 80, 0);
+    margin-bottom: 10px;
+}
+.listas-anime2 figure, .listas-anime2 figure img{
+    width:150px;
+    height: 220px;
+    margin: 0 10px;
+}
+.listas-anime2 table{
+margin-left: 210px;
+padding-top: 25px;
+}
+.listas-anime2 a{
+    color: rgb(255, 255, 255);
+}
+
+.listas-anime2 span{
+    color: rgb(0, 182, 189);
+    font-size: 13px;
+    margin-left:25px;
+}
+.listas-anime2 th{
+    width: 15px;
+    font-size: 16px;
+    padding: 20px 0;
+    margin-left: 16px;
+}
+.listas-anime2 tr td{
+    font-size:15px;
+}
+.listas-anime2 td, .animes-popular td,.recem-animes td,.animes-donghua td,.waifu-animes td{
+    color: rgb(109, 109, 109);
+}
+.bg-news{
+    background-image: url('../images/news/bg-news.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+.news1{
+    width: 75%;
+    height: 680px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    float: left;
+    left: 240px;
+    top: 3035px;
+    border-radius: 10px;
+    font-family: 'Roboto',sans-serif;
+}
+.news1 h1{
+    font-size: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+.news1 hr{
+    width: 1300px;
+    margin-left: 40px;
+    border: 2px solid rgb(61, 179, 173);
+    margin-top: 15px;
+}
+.destaque{
+    width: 300px;
+    height:580px;
+    background: rgb(0, 0, 0);
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.destaque h2{
+    color: white;
+}
+.destaque table{
+    margin-left: 18px;
+}
+.destaque tr td{
+    padding-top: 5px;
+}
+.destaque img{
+    width: 250px;
+    height: 140px;
+}
+.destaque h3{
+    color: rgb(255, 255, 255);
+}
+.destaque span{
+    color: rgb(109, 109, 109);
+    font-size: 11px;
+}
+.recentes{
+    background: rgb(0, 0, 0);
+    width: 970px;
+    height: 580px;
+    position: absolute;
+    float: left;
+    left: 370px;
+}
+.recentes h2{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.recentes a{
+    color:rgb(109, 109, 109);
+}
+.recentes a:hover{
+    color: white;
+    transition: .3s;
+}
+.recentes span{
+    margin-left:690px;
+    font-size: 18px;
+}
+.recentes figure, .recentes figure img{
+    width: 180px;
+    height: 80px;
+    margin-right: 10px;
+}
+.recentes table a{
+    color: white;
+}
+.recentes table span{
+    font-size: 12px;
+}
+.animes-popular{
+    height: 390px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+.animes-donghua{
+    height: 470px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+.animes-curious{
+    height: 470px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+}
+.animes-popular h1,.recem-animes h1,.lancamentos h1,.animes-donghua h1,.waifu-animes h1,.animes-curious h1{
+    padding-top: 30px;
+    margin-left: 250px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+.animes-popular a,.recem-animes a,.animes-donghua a,.waifu-animes a,.animes-curious a{
+    color:rgb(109, 109, 109);
+    font-size: 17px;
+}
+.animes-popular a:hover, .recem-animes a:hover,.animes-donghua a:hover,.waifu-animes a:hover,.animes-curious a:hover{
+    color: white;
+    transition: .3s;
+}
+.animes-popular table,.animes-donghua table,.animes-curious table{
+    margin-left: 210px;
+}
+.animes-popular th,.recem-animes th,.animes-donghua th,.waifu-animes th,.dub-cat th,.animes-curious th{
+    width: 15px;
+    font-size: 16px;
+    padding: 2px 0;
+    margin-left: 16px;
+}
+.animes-popular th a,.animes-donghua th a,.animes-curious th a{
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.animes-popular figure, .animes-popular figure img,.animes-donghua figure,.animes-donghua figure img,.animes-curious figure,.animes-curious figure img{
+    width:150px;
+    height: 220px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+}
+.animes-popular span,.recem-animes span,.animes-donghua span,.waifu-animes span,.animes-curious span{
+    margin-left: 30px;
+    font-size: 13px;
+    color: rgb(0, 182, 189);
+}
+.recem-animes,.waifu-animes{
+    width: 100%;
+    height: 1300px;
+    background: rgb(0, 0, 0);
+}
+.recem-animes th a,.waifu-animes th a{
+    color: white;
+    font-size:15px;
+}
+.titulo-recem{
+    color: white;
+}
+.recem-animes figure, .recem-animes figure img,.waifu-animes figure,.waifu-animes figure img{
+    width:150px;
+    height: 220px;
+    margin: 0 10px;
+}
+.recem-animes table,.waifu-animes table{
+    margin-left: 210px;
+    padding-top: 15px;
+}
+.girlfriend-ad,.beast-ad{
+    margin-left: 350px;
+    margin-top: 90px;
+}
+
+.bg-ground-one{
+    width: 100%;
+    height: 350px;
+    background-image:url('../images/background-2.webp') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-float{
+    position:relative;
+    float: left;
+    width: 210px;
+    height: 300px;
+    left: 600px;
+    top: 10px;
+}
+.one-piece-img{
+    height: 300px;
+    width: 60%;
+    background: black;
+    margin-left: 350px;
+    position:absolute;
+    float: left;
+    top: 5500px;
+}
+.one-piece{
+    width: 675px;
+    background: rgb(0, 0, 0);
+    height: 300px;
+    position: absolute;
+    float: right;
+    right: 390px;
+    top: 5500px;
+}
+.one-piece a,.to-eternity1 a,.spy a,.boku a,.to-vanitas1 a{
+    color: white;
+    margin-left:40px;
+    font-size: 27px;
+    font-family: 'Roboto',sans-serif;
+}
+.one-piece a:hover,.to-eternity1 a:hover,.spy a:hover,.boku a:hover,.to-vanitas1 a:hover{
+    text-decoration: underline;
+}
+.one-piece span,.to-eternity1 span,.spy span,.boku span,.to-vanitas1 span{
+    font-size: 14px;
+    color: rgb(109, 109, 109);
+    margin-left: 5px;
+}
+.one-piece h2, .to-eternity1 h2,.spy h2,.boku h2,.to-vanitas1 h2{
+    color: rgb(0, 182, 189);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.one-piece p,.to-eternity1 p,.spy p,.boku p,.to-vanitas1 p{
+    color: white;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.botao-1 button{
+    width: 250px;
+    height: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: rgb(252, 80, 0);
+    font-size: 16px;
+    color: black;
+}
+
+.botao-1 i{
+font-size: 20px;
+}
+.botao-1 button:hover{
+    background-color:black;
+    color: rgb(252, 80, 0);
+    transition: .5s;
+}.botao-1 button{
+    width: 250px;
+    height: 50px;
+    text-decoration: none;
+    background-color: rgb(252, 80, 0);
+    font-size: 16px;
+    border: 2px solid rgb(252, 80, 0);
+    border-color:2px solid rgb(252, 80, 0);
+    color: black;
+}
+.botao-1 i{
+font-size: 20px;
+}
+.botao-1 button:hover{
+    background-color:black;
+    color: rgb(252, 80, 0);
+    transition: .5s;
+}
+.botao-2 button{
+    width: 250px;
+    height: 50px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgba(252, 80, 0,.9);
+    font-size: 16px;
+    color: rgba(252, 80, 0,.9);
+}
+.botao-2 i{
+font-size: 20px;
+}
+.botao-2 button:hover{
+    background-color:rgb(0, 0, 0);
+    color: rgb(252, 80, 0);
+    transition: .5s;
+    border-color: rgb(252, 80, 0);
+}
+.to-eternity{
+    width: 100%;
+    height: 350px;
+    background: rgb(0, 0, 0);
+}
+.to-vanitas{
+    width: 100%;
+    height: 350px;
+    background: rgb(0, 0, 0);  
+}
+.eternity-img{
+    width: 520px;
+    height: 290px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    float:left;
+    top: 5850px;
+    left: 300px;
+}
+.vanitas-img{
+    width: 520px;
+    height: 290px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    float:left;
+    top: 9800px;
+    left: 350px;
+}
+.eternity-img img,.vanitas-img img{
+    width: 480px;
+    height: 250px;
+}
+.to-eternity1{
+    width: 650px;
+    background: rgb(0, 0, 0);
+    height: 300px;
+    margin-left: 850px;
+    position: relative;
+    top: 25px;
+}
+.to-vanitas1{
+    width: 650px;
+    background: rgb(0, 0, 0);
+    height: 300px;
+    margin-left: 850px;
+    position: relative;
+    top: 25px;
+}
+.lancamentos{
+    width: 100%;
+    height: 650px;
+    background: rgb(0, 0, 0);
+}
+.lancamentos span{
+    margin-left: 700px;
+    color: rgb(109, 109, 109);
+    font-size: 17px;
+}
+.lancamentos span:hover{
+    color: white;
+    transition: .5s;
+}
+.lancamentos-table hr{
+    border: 1px solid rgb(90, 89, 89);
+    width: 900px;
+    margin-left: 400px;
+}
+.lancamentos-table h1{
+    margin-left: 430px;
+}
+.lancamentos-table{
+    width: 1000px;
+    margin-left: 400px;
+    height: 400px;
+    background: rgb(0, 0, 0);
+}
+.lancamentos-table figure,.lancamentos-table figure img{
+    width: 160px;
+    height: 90px;
+}
+.lancamentos-table table{
+    margin-left: 10px;
+    margin-top: 30px;
+    height: 370px;
+    width: 1050px;
+}
+.lancamentos a,.dub-cat a{
+    color: white;
+    font-size: 17px;
+    margin-left: 5px;
+}
+.lancamentos-table a:hover{
+    text-decoration: underline;
+}
+.lancamentos-table span,.dub-cat span,.dub-cat1 span{
+    font-size: 15px;
+    color: rgb(0, 182, 189);
+    margin-left: 10px;
+}
+.lancamentos p{
+    color: rgb(109, 109, 109);
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.lancamentos-table button{
+    height: 45px;
+    width: 1050px;
+    text-decoration: none;
+    background-color: rgba(9,56,109,.8);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    transition: .5s;
+}
+.lancamentos-table button:hover{
+    background-color: rgb(9,56,109);
+}
+.bg-spy{
+    width: 100%;
+    height: 380px;
+    background-image:url('../images/background-2.webp') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.spy{
+    width: 750px;
+    background: rgb(0, 0, 0);
+    height: 300px;
+    margin-left: 850px;
+    position: relative;
+    top: 45px;
+}
+.spy-img{
+    height: 300px;
+    width: 60%;
+    background: rgb(0, 0, 0);
+    margin-left: 350px;
+    position:absolute;
+    float: left;
+    top: 7335px;
+}
+.img-float-spy{
+    position:relative;
+    float: left;
+    left: 600px;
+    bottom: 270px; 
+}
+ .img-float-spy figure img{
+    width: 210px;
+    height: 300px;
+}
+.bg-boku{
+    width: 100%;
+    height: 350px;
+    background: black;
+}
+.boku{
+    width: 750px;
+    background: rgb(0, 0, 0);
+    height: 300px;
+    margin-left: 850px;
+    position: relative;
+    top: 25px;
+}
+.boku-img{
+    height: 300px;
+    width: 60%;
+    background: rgb(0, 0, 0);
+    margin-left: 350px;
+    position:absolute;
+    float: left;
+    top: 7687px;
+}
+.img-float-boku{
+    position:absolute;
+    float:left;
+    left: 600px;
+    top: 7660px;
+}
+ .img-float-boku figure img{
+    width: 210px;
+    height: 300px;
+}
+.dub-pt,.dub-pt1{
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(180deg,DarkTurquoise , black);
+}
+.dub-cat,.dub-cat1{
+    width: 800px;
+    height: 350px;
+    position: relative;
+    top: 50px;
+    left: 300px;
+}
+.img-float-crunc{
+    position: absolute;
+    top: 9320px;
+    left: 1000px;
+}
+.img-float-crunc3{
+position: absolute;
+left: 1000px;
+top: 10120px;
+}
+.img-float-crunc2{
+    position: absolute;
+    top: 9320px;
+    left: 1000px;
+}
+.img-float-crunc4{
+    position: absolute;
+    top:10120px;
+    left: 1000px;
+}
+.img-float-crunc2 img,.img-float-crunc4 img{
+    width: 400px;
+    height: 400px;
+    opacity: .2;
+}
+.dub-cat h1,.dub-cat1 h1{
+    font-size: 27px;
+    margin-left:25px;
+}
+.dub-cat h2{
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+.dub-cat1 h2{
+    font-size: 15px;
+    padding-top: 10px;
+    margin-left: 25px;
+}
+.dub-cat table,.dub-cat1 table{
+    margin-top: 10px;
+}
+.dub-cat figure,.dub-cat figure img,.dub-cat1 figure img{
+    width: 130px;
+    height: 200px;
+    margin: 0 10px;
+}
+.dub-cat figure img:hover,.dub-cat1 figure img:hover{
+    border: 2px solid rgb(9,56,109);
+}
+.dub-cat a,.dub-cat1 a{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.dub-cat span,.dub-cat1 span{
+    margin-left: 30px;
+}
+.dub-cat td,.dub-cat1 td{
+    color: rgb(109, 109, 109);
+    font-size: 15px;
+}
+.to-filmes{
+    width: 100%;
+    height: 450px;
+    background-image: linear-gradient(180deg,DarkOrange , black);
+}
+.to-filmes-img{
+    position: relative;
+    top: 50px;
+    left: 200px;
+}
+.to-filmes-img h1{
+    font-size: 28px;
+    margin-left: 20px;
+}
+.to-filmes-img h2{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.to-filmes-img img{
+    margin-right: 10px;
+}
+.to-filmes-img span{
+    font-size: 12px;
+    color: rgb(109, 109, 109);
+}
+.to-filmes-img span:hover{
+    text-decoration: underline;
+    color: white;
+    transition: .5s;
+}
+.to-filmes-img a{
+    color: white;
+}
+.img-float-crunc5{
+    position: absolute;
+    top:10550px;
+    left: 1100px;
+}
+.animes-curious td{
+    color: rgb(109, 109, 109);
+}
+.semi-final{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 400px;
+}
+.semi-final img{
+    position: relative;
+    left: 800px;
+    top: 50px;
+}
+.semi-final h1{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 50px;
+}
+.semi-final h2{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-top: 5px;
+}
+.semi-final button{
+    margin-left: 800px;
+    margin-top: 20px;
+}
+footer{
+    width: 2800px;
+    height: 450px;
+    background-image: linear-gradient(180deg, black,Teal);
+}
+.footer-1{
+    width: 250px;
+    height: 350px;
+    background: transparent;
+    position: relative;
+    left: 340px;
+}
+.footer-2{
+    width: 250px;
+    height: 350px;
+    background: transparent;
+    position: absolute;
+    left: 680px;
+    top: 11890px;
+}
+.footer-3{
+    width: 250px;
+    height: 350px;
+    background: transparent;
+    position: absolute;
+    left: 1020px;
+    top: 11890px;
+}
+.footer-4{
+    width: 250px;
+    height: 350px;
+    background: transparent;
+    position: absolute;
+    left: 1360px;
+    top: 11890px;
+}
+.footer-1 h1,.footer-2 h1,.footer-3 h1,.footer-4 h1{
+    font-size: 18px;
+    color: white;
+}
+.footer-1 a,.footer-2 a,.footer-3 a,.footer-4 a{
+font-size: 17px;
+color: rgb(151, 150, 150);
+}
+.footer-1 a:hover,.footer-2 a:hover,.footer-3 a:hover,.footer-4 a:hover{
+    text-decoration: underline;
+    color: white;
+    transition: .5s;
+}
+.footer-1  li,.footer-2 li,.footer-3 li,.footer-4 li{
+    margin-bottom: 14px;
+    list-style: none;
+}
+.footer-2 i{
+    color: rgb(209, 209, 209);
+    font-size: 20px;
+}
+.footer-2 i:hover{
+    color: white;
+}
+footer hr{
+    width: 1300px;
+    margin-left: 250px;
+    border: 1px solid rgb(53, 53, 53);
+}
+.final{
+    width: 1300px;
+    background: transparent;
+    height: 30px;
+    position: relative;
+    top:50px;
+    left: 250px;
+}
+.final span{
+    margin-top: 50px;
+    color: rgb(163, 163, 163);
+}
